@@ -1,0 +1,15 @@
+@startuml
+
+node "CrossCert FIDO Secure Vault" as TCCFido <<$archimate/technology-device>> #TECHNOLOGY 
+
+node "FIDO Authentication Service" as TCCFidoAuth <<$archimate/technology-device>> #TECHNOLOGY 
+node "Fraud Detection Service" as TCCFidoDetection <<$archimate/technology-device>> #TECHNOLOGY 
+node "Know Your Customer\n(T.B.D)" as TCCKYC <<$archimate/technology-device>> #TECHNOLOGY 
+node "Out of Band Authentication\n(High Security Authentication)" as TCCOBA <<$archimate/technology-device>> #TECHNOLOGY 
+
+left to right direction
+TCCFido --> TCCFidoAuth
+TCCFido --> TCCFidoDetection
+TCCFido --> TCCKYC
+TCCFido --> TCCOBA
+@enduml
